@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_vowels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/swar_vowels"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_25"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_vowels"
+        android:layout_width="@dimen/margin200"
+        android:layout_height="@dimen/margin200"
+        android:src="@drawable/a_aa"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin15"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_consonant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_vowels"
+        android:layout_marginTop="@dimen/margin15"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vyanjan_consonant"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_25"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/iv_consonant"
+            android:layout_width="@dimen/margin200"
+            android:layout_height="@dimen/margin200"
+            android:src="@drawable/ka_kha"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
